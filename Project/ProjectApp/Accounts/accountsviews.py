@@ -1,12 +1,12 @@
 from ..models import *
-from ..serializers import *
-
-from django.contrib.auth import authenticate
+from .accountsserializer import *
 
 from rest_framework import generics
 from rest_framework.views import APIView
 from rest_framework import status
 from rest_framework.response import Response
+
+from django.contrib.auth import authenticate
 
 from django.utils import timezone
 
