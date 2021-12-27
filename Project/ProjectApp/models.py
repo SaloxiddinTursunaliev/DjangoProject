@@ -28,6 +28,7 @@ class Vote(models.Model):
         Choice, related_name='votes', on_delete=models.CASCADE)
     poll = models.ForeignKey(Poll, on_delete=models.CASCADE)
     voted_by = models.ForeignKey(User, on_delete=models.CASCADE)
+    pub_date = models.DateTimeField(auto_now_add=True, blank=True, null=True)
 
     class Meta:
         unique_together = ("poll", "voted_by")
