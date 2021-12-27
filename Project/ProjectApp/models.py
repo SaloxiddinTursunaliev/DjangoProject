@@ -17,6 +17,7 @@ class Choice(models.Model):
         Poll, related_name='choices', on_delete=models.CASCADE
     )
     choice_text = models.CharField(max_length=100)
+    pub_date = models.DateTimeField(auto_now_add=True, blank=True, null=True)
 
     def __str__(self):
         return self.choice_text
