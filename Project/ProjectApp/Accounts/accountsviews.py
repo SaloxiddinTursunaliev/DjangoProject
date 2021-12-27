@@ -33,16 +33,18 @@ class LoginView(APIView):
             # u.save()
 
             # user.username = request.data.get("first_name")
-            # user.save(update_fields=['username'])
+            # # user.save(update_fields=['username'])
 
             # user.last_login = timezone.now()
-            # user.save(update_fields=['last_login'])
+            # # user.save(update_fields=['last_login'])
 
             # user.is_staff = request.data.get("is_staff")
-            # user.save(update_fields=['is_staff'])
+            # # user.save(update_fields=['is_staff'])
 
             # user.is_superuser = request.data.get("is_superuser")
-            # user.save(update_fields=['is_superuser'])
+            # # user.save(update_fields=['is_superuser'])
+
+            # user.save()
 
             return Response(
                 {
